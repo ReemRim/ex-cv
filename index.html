@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script>
+        // Fonction pour charger le contenu
+        function includeHTML() {
+            console.log('Here &&&')
+            fetch('header.html', {headers: {
+        "Access-Control-Allow-Origin": "GET" // DELETE THIS
+    }})
+                .then(response => response.text())
+                .then(data => document.getElementById('header').innerHTML = data);
+            fetch('footer.html',  {
+        mode: 'no-cors' // Allows request to be sent, but JS cannot access response
+})
+                .then(response => response.text())
+                .then(data => document.getElementById('footer').innerHTML = data);
+        }
+        window.onload = includeHTML;
+    </script> -->
+    <script src="document.js"></script>
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="wireframe-header">
+        <div class="header-content">
+            <div class="logo">BAH <span class="highlight">Mariama</span></div>
+            <nav class="wireframe-nav">
+                <a href="#accueil" class="nav-item"> <span>Accueil</span></a>
+                <a href="#apropos" class="nav-item"><span id="col">A propos</span></a>
+                <a href="#projets" class="nav-item"><span id="col">Projets</span></a>
+                <a href="#competences" class="nav-item"><span id="col">Compétences</span></a>
+                <a href="#contact" class="nav-item"><span id="col">Contact</span></a>
+            </nav>
+        </div>
+    </header>
+    <!-- <div id="header"></div>
+    <main id="main"> -->
+    <!-- Section Accueil -->
+    <section id="accueil" class="wireframe-section section-accueil">
+        <div class="container">
+            <div class="accueil-content">
+                <div class="accueil-text">
+                    <h1 class="wireframe-title">Je suis <span class="highlight">Mariama Bah</span>,développeuse en devenir passionnée par le web et le design</h1>
+                    <a href="#projets" class="wireframe-btn" target="_blank">Voir mes projets</a>
+                </div>
+                <div class="accueil-image">
+                    <img src="img1.png" alt="Photo de Mariama Bah" class="accueil-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section A propos -->
+    <section id="apropos" class="wireframe-section section-apropos">
+        <div class="container">
+            <h2 class="section-title">A propos</h2> <br>
+            <div class="apropos-content">  
+                <div class="apropos-text">
+                    <p>Je m'appelle <span class="highlight">Mariama Bah</span>, passionnée par la <br>
+                            création de sites web modernes et interactifs</p>
+                    <p>Je suis actuellement étudiante en <span class="highlight">développement web</span>,<br>
+                            et je cherche à améliorer mes compétences en JavaScript, HTML, CSS</p>
+                    <p>J'adore transformer mes idées en projets concrets <br>
+                        et expérimenter avec les nouvelles technologies</p>
+                    <!-- <button class="wireframe-btn">Télécharger mon CV</button> -->
+                    <a href="http://127.0.0.1:5501/Cirruculu Vitae 2025.pdf" class="wireframe-btn" target="_blank">Télécharger mon CV</a>
+                </div>
+                <div class="apropos-image">
+                    <img src="img2.jpg" alt="Photo de profil" class="apropos-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="wireframe-section section-projets">
+        <div class="container">
+            <h2 class="section-title">Mes projets</h2>
+            <div class="projets-grid">
+                <div class="projet-card">
+                    <div class="card-content">
+                        <p>Une carte mentale parlant du web et de ses dérivées</p>
+                        <div class="tags">#html, #css, #js</div>
+                        <button class="wireframe-btn-small">Voir</button>
+                    </div>
+                </div>
+                <div class="projet-card">
+                    <div class="card-content">
+                        <p>Initiation à la création de fichiers HTML</p>
+                        <div class="tags">#html, #css, #js</div>
+                        <button class="wireframe-btn-small">Voir</button>
+                    </div>
+                </div>
+                <div class="projet-card">
+                    <div class="card-content">
+                        <p>Ajout du CSS à nos fichiers HTML</p>
+                        <div class="tags">#html, #css, #js</div>
+                        <button class="wireframe-btn-small">Voir</button>
+                    </div>
+                </div>
+                <div class="projet-card">
+                    <div class="card-content">
+                        <p>Passage au JavaScript sur nos fichiers HTML pour les interactions</p>
+                        <div class="tags">#html, #css, #js</div>
+                        <button class="wireframe-btn-small">Voir</button>
+                    </div>
+                </div>
+                <div class="projet-card">
+                    <div class="card-content">
+                        <p>Création de portfolio personnel</p>
+                        <div class="tags">#html, #css, #js</div>
+                        <button class="wireframe-btn-small">Voir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="wireframe-section section-competences">
+        <div class="container">
+            <h2 class="section-title">Mes compétences</h2> <br>
+            <div class="competences-content">
+                <div class="skills-column">
+                    <h3 class="skills-title">Soft Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-label">Gestion de projet</div>
+                        <div class="wireframe-progress-bar">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-label">Résolution de problème</div>
+                        <div class="wireframe-progress-bar">
+                            <div class="progress-fill" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-label">Adaptabilité</div>
+                        <div class="wireframe-progress-bar">
+                            <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <h3 class="skills-title">Hard Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-label">HTML</div>
+                        <div class="wireframe-progress-bar">
+                            <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-label">CSS</div>
+                        <div class="wireframe-progress-bar">
+                            <div class="progress-fill" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-label">Javascript</div>
+                        <div class="wireframe-progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-label">VS Code</div>
+                        <div class="wireframe-progress-bar">
+                            <div class="progress-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="wireframe-section section-contact">
+        <div class="container">
+            <h2 class="section-title contact-title">
+                Vous avez un <span class="highlight">projet en tête?</span><br>
+                N'hésitez pas à <span class="highlight">me contacter</span>
+            </h2>
+            <form class="wireframe-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="prenom">Votre prénom :</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Ex: Mariame" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nom">Votre nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sujet">Votre sujet :</label>
+                    <input type="text" id="sujet" name="sujet" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Votre message :</label>
+                    <textarea id="message" name="message" rows="10" required></textarea>
+                </div>
+                <div class="btn-envoyer"><button type="submit" class="wireframe-btn " >Envoyer</button></div>
+                
+                                        
+            </form>
+            <p id = "feedback"></p>
+        </div>
+    </section>
+    <!-- </main>
+    <div id="footer"></div> -->
+
+    <!-- Footer -->
+    <footer class="wireframe-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>Design by <span>Mariama Bah</span> with HTML CSS JS</div>
+                <div>Tous droits réservés - 2025</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
